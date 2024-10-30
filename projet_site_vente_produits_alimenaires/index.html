@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <div class="logo">
+        <p><span>Food</span>Store</p>
+    </div>
+    <ul class="menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#menu">Produits</a></li>
+        <li><a href="#about_us">À propos</a></li>
+        <li><a href="#reservation">Commande</a></li>
+        <li><a href="#cart" id="cart-icon">
+            <img src="Images/cart.png" alt="Panier">
+            <span id="cart-count"></span>
+        </a></li>
+    </ul>
+
+ <!-- menu responsive -->
+
+     <div class="toggle_menu"></div>
+</header>
+
+<!-- section accueil home -->
+
+<section id="home">
+    <div class="left">
+        <h4>Bienvenue sur le site de</h4>
+        <h1>La Maison D'Unisse</h1>
+        <p>S’assurer du bien être des familles, La Maison D’Unisse met à la disposition de celle-ci l’opportunité de consommer bio, grâce aux aliments sains pour une bonne régénération des cellules de ceux qui les consomment. Notamment les légumes, du poisson frais, fumé et salé, la viande fumée, ainsi que les jus de fruits naturels, tout ceci dans un cadre à l’africaine.</p>
+        <p> Car avec La Maison D’Unisse, nous travaillons pour l’obtention d’un organisme sain.</p>
+        <button><a href="#">COMMANDER MAINTENANT</a></button>
+    </div>
+    <div class="right">
+        <img src="images/home 3.jpg">
+    </div>
+</section>
+
+<!-- section menu -->
+
+<section id="menu">
+    <h4 class="mini_title"> Vos Produits bio</h4>
+    <h2 class="title">Nos produits Récurrents</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">LéGUMES</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Ndole Lavé" data-price="500">
+            <img src="Images/ndole.jpg">
+            <p>Ndole Lavé</p>
+            <p>500 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="2" data-name="Ekoribon Lavé" data-price="1000">
+            <img src="Images/ekoribon.png">
+            <p>Ekoribon Lavé</p>
+            <p>1000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="3" data-name="Folong Lavé" data-price="1000">
+            <img src="Images/folon.png">
+            <p>Folong Lavé</p>
+            <p>1000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="4" data-name="Kwem Lavé" data-price="500">
+            <img src="Images/kwem.png">
+            <p>Kwem Lavé</p>
+            <p>500 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="5" data-name="Nkeya Lavé" data-price="1000">
+            <img src="Images/ndole.jpg">
+            <p>Nkeya Lavé</p>
+            <p>1000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">POISSONS</h2>
+    <br>
+    <h2 class="title">POISSONS FRAIS</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Le bar" data-price="5000">
+            <img src="Images/le bar.jpg">
+            <p>Le Bar</p>
+            <p>5000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="2" data-name="Le bar" data-price="10000">
+            <img src="Images/le bar.jpg">
+            <p>Le Bar</p>
+            <p>10 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="3" data-name="Le bar" data-price="11000">
+            <img src="Images/le bar.jpg">
+            <p>Le Bar</p>
+            <p>11 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="4" data-name="La sole" data-price="5000">
+            <img src="Images/la sole.jpg">
+            <p>La sole</p>
+            <p>5000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="5" data-name="La sole" data-price="10000">
+            <img src="Images/la sole.jpg">
+            <p>La sole</p>
+            <p>10 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="6" data-name="La sole" data-price="11000">
+            <img src="Images/la sole.jpg">
+            <p>La sole</p>
+            <p>11 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="7" data-name="Le capitaine" data-price="7500">
+            <img src="Images/capitaine.jpg">
+            <p>Le Capitaine</p>
+            <p>7500 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="8" data-name="Le capitaine" data-price="11000">
+            <img src="Images/capitaine.jpg">
+            <p>Le Capitaine</p>
+            <p>11 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="9" data-name="Le Bossu" data-price="10000">
+            <img src="Images/bossus.jpg">
+            <p>Le Bossu</p>
+            <p>10 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="10" data-name="Le Yenda" data-price="4000">
+            <img src="Images/yenda.jpg">
+            <p>Le Yenda</p>
+            <p>4000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="11" data-name="Le Yenda" data-price="5000">
+            <img src="Images/yenda.jpg">
+            <p>Le Yenda</p>
+            <p>5000 FCFA le paquet </p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="12" data-name="Le Yenda" data-price="7500">
+            <img src="Images/yenda.jpg">
+            <p>Le Yenda</p>
+            <p>7500 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="13" data-name="La Carpe" data-price="5000">
+            <img src="Images/carpe.jpg">
+            <p>La Carpe</p>
+            <p>5000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="14" data-name="La Carpe" data-price="10000">
+            <img src="Images/carpe.jpg">
+            <p>La Carpe</p>
+            <p>10 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="15" data-name="La Carpe" data-price="11000">
+            <img src="Images/carpe.jpg">
+            <p>La Carpe</p>
+            <p>11 000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="16" data-name="Les Gambas" data-price="8500">
+            <img src="Images/Gambas.jpg">
+            <p>Les Gambas</p>
+            <p>8500 FCFA le kilo</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">POISSONS FUMéS</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="La Morue fumée" data-price="2500">
+            <img src="Images/morue fumée.jpg">
+            <p>La Morue fumée</p>
+            <p>2500 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="2" data-name="Le brochet fumé" data-price="4000">
+            <img src="Images/brochet fumé.jpg">
+            <p>Le brochet fumé</p>
+            <p>4000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">POISSON SALé</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Le Solo" data-price="3000">
+            <img src="Images/solo.jpg">
+            <p>Le Solo</p>
+            <p>3000 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">MIONDO</h2>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Les miondos" data-price="900">
+            <img src="Images/miondo.jpg">
+            <p>Les miondos</p>
+            <p>900 FCFA le paquet</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">VIANDES</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Poulet fumé" data-price="5000">
+            <img src="Images/poulet fumé.jpg">
+            <p>Poulet fumé</p>
+            <p>5000 FCFA le kilo</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="2" data-name="Porc fumé" data-price="4000">
+            <img src="Images/porc fumé.jpg">
+            <p>Porc fumé</p>
+            <p>4000 FCFA le kilo</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="3" data-name="Viande de bœuf fumée" data-price="4000">
+            <img src="Images/viande de bœuf fumée.jpg">
+            <p>Viande de bœuf fumée</p>
+            <p>4000 FCFA le kilo</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="title">JUS DE FRUITS NATURELS</h2>
+    <br>
+    <br>
+    <div class="dishes">
+        <div class="dish" data-id="1" data-name="Ananas-fruit de la passion" data-price="1500">
+            <img src="Images/ananas-passion.jpg">
+            <p>Ananas-fruit de la passion</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="2" data-name="Ananas-goyave" data-price="1500">
+            <img src="Images/ananas-goyave.jpg">
+            <p>Ananas-goyave</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="3" data-name="Ananas-citron" data-price="1500">
+            <img src="Images/ananas-citron.jpg">
+            <p>Ananas-citron</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="4" data-name="Ananas-cassimango" data-price="1500">
+            <img src="Images/ananas-cassimango.jpg">
+            <p>Ananas-cassimango</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="5" data-name="Corossol" data-price="1500">
+            <img src="Images/corossol.jpg">
+            <p>Corossol</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="6" data-name="Mangue" data-price="1500">
+            <img src="Images/mangue.jpg">
+            <p>Mangue</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="dish" data-id="7" data-name="Pastèque" data-price="1500">
+            <img src="Images/pastèque.jpg">
+            <p>Pastèque</p>
+            <p>1500 FCFA 1,5L</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</section>
+
+<!-- section about us -->
+
+<section id="about_us">
+    <h4 class="mini_title">À propos de nous</h4>
+    <h2 class="title">Pourquoi nous choisir ?</h2>
+    <div class="about">
+        <div class="left">
+            <img src="Images/home.jpg">
+        </div>
+        <div class="right">
+            <h3>Meilleurs sevices offerts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis expedita iusto, ut facere temporibus ea. Nam alias pariatur ab aliquid fuga assumenda consequatur quibusdam ullam optio odit, commodi aut.</p>
+            <button><a href="#">Contactez-nous</a></button>
+        </div>
+    </div>
+</section>
+
+<!-- section comments -->
+
+<section class="comment_section">
+    <h4 class="mini_title">Commentaires</h4>
+    <h2 class="title">Les pensées de la population</h2>
+    <div class="comments">
+        <div class="comment">
+            <div>
+                <img src="Images/zokli.jpg">
+                <h4>Zigzou</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic nemo modi doloremque minus, quasi eaque aspernatur error distinctio in officia perspiciatis. Possimus eveniet repellendus maiores voluptates! Provident, impedit similique.</p>
+        </div>
+        <div class="comment">
+            <div>
+                <img src="Images/belbi.jpg">
+                <h4>Belbi</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic nemo modi doloremque minus, quasi eaque aspernatur error distinctio in officia perspiciatis. Possimus eveniet repellendus maiores voluptates! Provident, impedit similique.</p>
+        </div>
+        <div class="comment">
+            <div>
+                <img src="Images/reccus.jpg">
+                <h4>Reccus</h4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic nemo modi doloremque minus, quasi eaque aspernatur error distinctio in officia perspiciatis. Possimus eveniet repellendus maiores voluptates! Provident, impedit similique.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- section reservation -->
+
+<section id="reservation">
+    <h4 class="mini_title">Commandes</h4>
+    <h2 class="title">Remplissez ce formulaire pour faire une réservation</h2>
+    <form action="">
+        <label>Nom</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="email">
+        <label>Numéro</label>
+        <input type="text">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Passer une commande">
+
+    </form>
+</section>
+
+
+<!-- footer -->
+
+<footer>
+    <div class="services_list">
+        <div class="service">
+            <img src="Images/clock.png">
+            <h2>Ouverture</h2>
+            <p>6h30 - 22h30</p>
+        </div>
+        <div class="service">
+            <img src="Images/localisation.png">
+            <h2>Adrese</h2>
+            <p>Dla-Bonapriso</p>
+            <p>Face KMC</p>
+        </div>
+        <div class="service">
+            <img src="Images/email.png">
+            <h2>Email</h2>
+            <p>elessaandrew13@gmail.com</p>
+            <p>andrew.mbassi@icloud.com</p>
+        </div>
+        <div class="service">
+            <img src="Images/call.png">
+            <h2>Numéro</h2>
+            <p>237 699989684</p>
+            <p>237 655867084</p>
+            <p>237 693295663</p>
+        </div>
+    </div>
+
+    <p class="footer_text">2024 Réalisé par <span>Andrew Mbassi</span> | Tous les droits sont réservés.</p>
+</footer>
+
+<script>
+    var small_menu = document.querySelector('.toggle_menu')
+    var menu = document.querySelector('.menu')
+
+    small_menu.onclick = function(){
+         small_menu.classList.toggle('active');
+         menu.classList.toggle('responsive');
+         menu.style.transition = 'all 0.3s ease';
+    }
+</script>
+</body>
+</html>
